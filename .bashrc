@@ -9,4 +9,7 @@ shopt -s checkwinsize
 alias ls='ls --color=auto'
 alias get_audio='youtube-dl --get-url -f 140'
 alias l='ls'
+alias tree='tree -A'
+alias grep='grep --color=always'
+
 PS1='\[\e[92m\]vivi\[\e[93m\]@\h:\[\e[01;34m\]\W\[\e[39m\] # '
