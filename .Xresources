@@ -1,0 +1,11 @@
+URxvt.perl-ext-common: default,matcher,resize-font,clipboard
+URxvt.url-launcher: /usr/bin/firefox
+URxvt.matcher.button: 1
+
+URxvt.matcher.rend.0: Uline Bold fg5
+
+/* activate copy / paste with key binding */
+URxvt.clipboard.autocopy: true
+URxvt.keysym.C-S-c: perl:clipboard:copy
+URxvt.keysym.C-S-v: perl:clipboard:paste
+
