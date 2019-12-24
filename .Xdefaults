@@ -1,7 +1,6 @@
-urxvt*transparent: true
-urxvt*shading: 30
 urxvt*scrollBar: false
 urxvt*foreground:white
+urxvt*background: #101010
 urxvt*font: xft:DejaVu Sans Mono:pixelsize=12:antialias=true:hinting=true
 urxvt*boldfont: xft:DejaVu Sans Mono:bold:pixelsize=12:antialias=true:hinting=true
 URxvt.cursorColor: #777

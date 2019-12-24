@@ -12,4 +12,6 @@ alias l='ls'
 alias tree='tree -A'
 alias grep='grep --color=always'
 
-PS1='\[\e[92m\]vivi\[\e[93m\]@\h:\[\e[01;34m\]\W\[\e[39m\] # '
+export PS1="\[\033[38;5;220m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\[$(tput sgr0)\]\[\033[38;5;27m\]\H\[$(tput sgr0)\]\[\033[38;5;15m\]: \[$(tput sgr0)\]\[\033[38;5;40m\]\W\[$(tput sgr0)\]\[\033[38;5;15m\]{\[$(tput sgr0)\]\[\033[38;5;196m\]\$?\[$(tput sgr0)\]\[\033[38;5;15m\]} \[$(tput sgr0)\]"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
