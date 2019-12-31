@@ -24,6 +24,9 @@ ln -s $PWD/.Xdefaults ~/.Xdefaults
 rm -rf ~/.config/i3
 ln -s $PWD/i3/ ~/.config/i3
 
+rm -rf ~/wallpaper
+ln -s $PWD/wallpaper/ ~/wallpaper
+
 echo "[Trigger]
 Operation = Install
 Operation = Remove

@@ -32,16 +32,17 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
-# add parameter for autolock when 1o minutes are passed
-exec --no-startup-id xautolock -time 10 -locker 'i3lock -i ./wallpaper/wallpaper_white_walker.png'
+# add parameter for autolock when 10 minutes are passed
+exec --no-startup-id xautolock -time 10 -locker 'i3lock -i ~/wallpaper/wallpaper_white_walker.png'
 
-#add fr keybooard at startup
+#add fr keyboard at startup
 exec --no-startup-id setxkbmap fr
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
-#add the desktop backgrpund image
-exec --no-startup-id feh --bg-fill ../wallpaper/*
+#add the desktop background image
+exec --no-startup-id feh --bg-fill ~/wallpaper/*
 
 #add tapt to click
 exec xinput set-prop 12 280 1
