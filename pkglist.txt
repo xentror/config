@@ -1,6 +1,7 @@
 acpi
 acpid
 alsa-utils
+arandr
 ario
 autoconf
 automake
