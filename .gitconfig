@@ -1,3 +1,5 @@
 [user]
-	email = thibault.vivies@epita.fr
-	name = Thibault vivies
+    email = thibault.vivies@epita.fr
+    name = Thibault vivies
+[core]
+    editor = 'vim'
