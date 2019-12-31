@@ -24,4 +24,16 @@ ln -s $PWD/.Xdefaults ~/.Xdefaults
 rm -rf ~/.config/i3
 ln -s $PWD/i3/ ~/.config/i3
 
+echo "[Trigger]
+Operation = Install
+Operation = Remove
+Type = Package
+Target = *
+
+[Action]
+When = PostTransaction
+Exec = /bin/sh -c '/usr/bin/pacman -Qqe > $PWD/pkglist.txt'" > $PWD/pkglist.hook
+
+sudo cp $PWD/pkglist.hook /usr/share/libalpm/hooks/ && rm $PWD/pkglist.hook
+
 sudo pacman -Syu --needed - < pkglist.txt
