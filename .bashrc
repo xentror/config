@@ -12,6 +12,12 @@ alias l='ls'
 alias tree='tree -A'
 alias grep='grep --color=always'
 
-export PS1="\[\033[38;5;220m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\[$(tput sgr0)\]\[\033[38;5;27m\]\H\[$(tput sgr0)\]\[\033[38;5;15m\]: \[$(tput sgr0)\]\[\033[38;5;40m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]{\[$(tput sgr0)\]\[\033[38;5;196m\]\$?\[$(tput sgr0)\]\[\033[38;5;15m\]} \[$(tput sgr0)\]"
+export GIT_PS1_SHOWSTASHSTATE=1
+export PS1='\[\e[92m\]vivi\[\e[93m\]@'\
+'\[\e[01;34m\]\H:'\
+'$(ret=$?; if [ $ret -ne 0 ]; then echo " \[\e[31;7m\]"$ret"\[\e[0m\]"; fi)'\
+'\[\e[31;1m\]$(__git_ps1) '\
+'\[\e[0m\]\w'\
+'\[\e[97m\] # '\
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
