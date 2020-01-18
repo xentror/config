@@ -1,5 +1,8 @@
 #! /usr/bin/env sh
 
+rm ~/git-prompt.sh
+cp $PWD/git-prompt.sh ~/
+
 rm ~/.bashrc
 ln -s $PWD/.bashrc ~/.bashrc
 
