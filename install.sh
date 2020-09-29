@@ -53,3 +53,14 @@ When = PostTransaction
 Exec = /bin/sh -c '/usr/bin/pacman -Qqe > $PWD/pkglist.txt'" > $PWD/pkglist.hook
 
 sudo cp $PWD/pkglist.hook /usr/share/libalpm/hooks/ && rm $PWD/pkglist.hook
+
+# install man x86
+mkdir ~/mans
+cd ~/mans
+
+git clone https://aur.archlinux.org/x86-manpages-git.git
+makepkg
+cd src/x86-manpages
+
+sudo mkdir /usr/local/man/man7
+sudo cp manpages/* /usr/local/man/man7/

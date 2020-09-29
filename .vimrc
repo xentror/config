@@ -288,7 +288,7 @@ Plug 'jlanzarotta/bufexplorer' " explore the buffer with <F3>
 Plug 'leafgarland/typescript-vim' "typescript
 Plug 'vim-airline/vim-airline' "footer bar
 Plug 'ervandew/supertab'
-Plug 'embear/vim-localvimrc' "dep local_vimrc
+" Plug 'embear/vim-localvimrc' "dep local_vimrc
 Plug 'w0rp/ale' "async linting
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' } "find files
 Plug 'junegunn/fzf.vim'
