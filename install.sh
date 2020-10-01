@@ -59,8 +59,9 @@ mkdir ~/mans
 cd ~/mans
 
 git clone https://aur.archlinux.org/x86-manpages-git.git
+cd x86-manpages-git
 makepkg
 cd src/x86-manpages
 
 sudo mkdir /usr/local/man/man7
-sudo cp manpages/* /usr/local/man/man7/
+sudo cp manp7/* /usr/local/man/man7/
