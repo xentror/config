@@ -14,12 +14,14 @@ alias get_audio='youtube-dl --get-url -f 140'
 alias l='ls'
 alias tree='tree -A'
 alias grep='grep --color=always'
+alias logisim='java -jar ~/Logisim/logisim*.jar &'
 
 export GIT_PS1_SHOWSTASHSTATE=1
 export PS1='\[\e[92m\]vivi\[\e[93m\]@'\
 '\[\e[01;34m\]\H:'\
 '$(ret=$?; if [ $ret -ne 0 ]; then echo " \[\e[31;7m\]"$ret"\[\e[0m\]"; fi)'\
 '\[\e[31;1m\]$(__git_ps1) '\
-'\[\e[0m\]\w # '\
+'\[\e[0m\]\w # '
+export PATH=/opt/cuda/bin:$PATH
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
